@@ -1,15 +1,15 @@
 %* ========== ========== ==========
 %* Author:      Roy Wu
-%* Description: Basic coommnads in matrix operation - A\b, rref(),
+%* Description: Basic coommands in matrix operation - A\b, rref(),
 %               inverse, and determinant
 %* History:     10/02/2021 initial version 
 %*              03/16/2022 share to public repo
 %* ========== ========== ==========
 %% Matrix lego
 clc; clear;
-%* ----- ----- -----
-%*     matrix lego - rows
-%* ----- ----- -----
+%* ----- ----- ----- ----- -----
+%*     matrix lego (block matrices) - rows
+%* ----- ----- ----- ----- -----
 a1 = [11 12 13 14 15 16 17]; 
 a2 = [21 22 23 24 25 26 17]; 
 a3 = [31 32 33 34 35 36 37]; 
@@ -27,9 +27,9 @@ out2 = A(3,:);
 fprintf('\n\nA(3,:) is ...')
 disp(out2)
 
-% %* ----- ----- -----
-% %*     matrix lego - columns
-% %* ----- ----- -----
+% %* ----- ----- ----- ----- -----
+% %*     matrix lego (block matrices)  - columns
+% %* ----- ----- ----- ----- -----
 % a1 = [11; 21; 31; 41; 51;]; 
 % a2 = [12; 22; 32; 42; 52;]; 
 % a3 = [13; 23; 33; 43; 53;]; 
