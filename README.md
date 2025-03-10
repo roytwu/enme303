@@ -6,6 +6,11 @@ This is an undergraduate course in linear algebra and numerical methods for stud
 * Have solid base of understanding the concept of linear systems and the corresponding applications;
 * Be comfortable with MATLAB programming.
 
+Schedule (follwing thes syllabus):
+1. demo_vectors
+2. demo_matxBasic
+3. demo_orthogonality
+
 
 
 ...
