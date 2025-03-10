@@ -1,9 +1,11 @@
 %* ========== ========== ==========
 %* Author:      Roy Wu
-%* Description: Basic coommands in matrix operation - A\b, rref(),
-%               inverse, and determinant
+%* Description: Basic coommands in matrix operation - A\b, rref(),inverse, & determinant. 
+%               One can use these commands to find the answer key for 
+%               most of the HWs before the midterm exam.
 %* History:     10/02/2021 initial version 
 %*              03/16/2022 share to public repo
+%*              03/10/2025 Fine tuning by adding comments
 %* ========== ========== ==========
 %% Matrix lego
 clc; clear;
@@ -11,20 +13,19 @@ clc; clear;
 %*     matrix lego (block matrices) - rows
 %* ----- ----- ----- ----- -----
 a1 = [11 12 13 14 15 16 17]; 
-a2 = [21 22 23 24 25 26 17]; 
+a2 = [21 22 23 24 25 26 392]; 
 a3 = [31 32 33 34 35 36 37]; 
 a4 = [41 42 43 44 45 46 47]; 
 a5 = [51 52 53 54 55 56 57]; 
 A= [a1; a2; a3; a4; a5];
 % B= [0;0;0;0;10;17;14];
-x=A; 
 disp(A)
 
-out1 = A(3,3);
-fprintf('A(3,3) is ...%f', out1)\
+out1 = A(3, 3);
+fprintf('A(3,3) is ...%f', out1)
 
-out2 = A(3,:);
-fprintf('\n\nA(3,:) is ...')
+out2 = A(2:4,:);
+fprintf('\n\nA(2:4, :) is ...\n')
 disp(out2)
 
 % %* ----- ----- ----- ----- -----
@@ -41,16 +42,19 @@ disp(out2)
 % disp(A)
 
 %% Augemented Matrix with rref() 
+%* If yo can write matrix operation on a paper, 
+%* it can be written in the same way in MATLAB 
 clc; clear;
-A = [2 5 1; 4 11 5; 0 1 -1];
-b = [1; 5; 3];  % assume k=5 
-augA = [A b];
-disp(rref(augA))
+
+A = [2 5 1; 4 11 5; 0 1 -1];  
+b = [1; 5; 3];  %* assume k=5 
+augA = [A b];   %* augmented matrix
+disp(rref(augA))  
 
 disp("Solution of the linear system is...\n")
 disp(A\b)
 
-%% Inverse (3x3)
+%% Inverse (3x3) - Sanity Check
 clc; clear;
 A= [0 1 2; 1 0 3; 4 -3 8];
 
@@ -63,8 +67,6 @@ disp(A*invA)
 
 fprintf("\nA inverse times A is...\n")
 disp(invA*A)
-
-
 %% Determinant (3x3)
 clc; clear;
 A= [0 1 2; 1 0 3; 4 -3 8];
