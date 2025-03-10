@@ -5,7 +5,7 @@
 %               most of the HWs before the midterm exam.
 %* History:     10/02/2021 initial version 
 %*              03/16/2022 share to public repo
-%*              03/10/2025 Fine tuning by adding comments
+%*              03/10/2025 Adding one more example of determinant
 %* ========== ========== ==========
 %% Matrix lego
 clc; clear;
@@ -113,3 +113,13 @@ out = B(1,1)*det(C11) + B(1,2)*det(C12)...
 fprintf('determinant of B (4x4) is %f\n\n', out)
 fprintf('Determinant of B (4x4) is %f\n\n', det(B))
 
+%% Determinant - 5 by 5 Matrix
+%* in-class activity
+a1 = [-2 3.45    0  68  0];
+a2 = [0  0.5     0   0  0];
+a3 = [0  7.777  -2  67  0];
+a4 = [0  448     0  -2  0];
+a5 = [0  -52.029 0  66 -2];
+A= [a1; a2; a3; a4; a5];
+disp(A)
+disp(det(A))
