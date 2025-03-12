@@ -9,7 +9,7 @@ This is an undergraduate course in linear algebra and numerical methods for stud
 * Be comfortable with MATLAB programming.
 
 
-## Schedule (follwing thes syllabus):
+## Schedule (alinging with the syllabus):
 1. demo_vectors
 2. demo_matxBasic
 3. demo_orthogonality
