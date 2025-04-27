@@ -41,10 +41,20 @@ disp(out2)
 
 %* Diagonlaization
 P = out1;
-D = out2;
+D = out2; 
 A_2 = P*D*inv(P);
 display(A_2)
 
+%* eigenvector can be scaled and the diaglonalization is still valid
+P = 5.7*P;
+A_3 = P*D*inv(P);
+display(A_3)
+
+%* Property of Diagonalization
+left = A^5;
+right = P*(D^5)*inv(P);
+compare = (left -right);
+display(compare)
 
 %% Diagonalization (Dependent Eigenvectors)
 A = [2 4 3; -4 -6 -3; 3 3 1];
