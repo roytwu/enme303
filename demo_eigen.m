@@ -7,6 +7,7 @@
 
 %% Lecture Demo
 %* assemble the matrix A
+clc; clear; 
 a1 = [1; 0; 1; 1];
 a2 = [0; 1; 0; 0];
 a3 = [0; 5; 2; 0];
@@ -31,8 +32,27 @@ disp(A*v)
 
 %* display numbers in string for better alignment
 %* for cosmetic purpose only
-out1 = num2str(out1,'%10.3f'); 
+out1_str = num2str(out1,'%10.3f'); 
 
-disp(out1)
+disp(out1_str)
 disp(out2)
 % disp(out1(:,1))
+
+
+%* Diagonlaization
+P = out1;
+D = out2;
+A_2 = P*D*inv(P);
+display(A_2)
+
+
+%% Diagonalization (Dependent Eigenvectors)
+A = [2 4 3; -4 -6 -3; 3 3 1];
+
+%* check the eigenvalues
+values = eig(A);
+display(values)
+
+[vec, val] = eig(A);
+display(real(vec))
+display(real(val))
