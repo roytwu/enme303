@@ -66,3 +66,11 @@ display(values)
 [vec, val] = eig(A);
 display(real(vec))
 display(real(val))
+
+%% Diagonalization
+%* The 1s example in Slides, sanity check
+clc; clear;
+A = [7 2; -4 1];
+[vec, val] = eig(A);
+display(vec)
+display(val)
