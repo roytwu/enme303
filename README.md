@@ -17,8 +17,8 @@ This undergraduate course covers linear algebra and numerical methods, and is in
 5. demo_eigen
 
 
-## Archive Slides
-I taught this course 5 fimes between Fall 2021 and Sring 2024. The course previously consisted of two 50-min lecture plus one 90-min "lab" section. The lab, while not a laboratory in the traditional sense (as it did not involve physical experiments), was dedicated to MATLAB programming and run by teaching assistants (TAs), including both graduate and undergraduate students. Each semester, the TAs contributed by refining the slides and updating the lab assignments. Starting from Fall 2024, the course setup is updated to two 75-min lectures, with MATLAB programming now incorporated into the lectures and taught directly by the course instructor, i.e., mysself.
+## Legacy Lab Slides (Archived)
+I taught this course 5 times between Fall 2021 and Sring 2024. The course previously consisted of two 50-min lecture plus one 90-min "lab" section. The lab, while not a laboratory in the traditional sense (as it did not involve physical experiments), was dedicated to MATLAB programming and run by teaching assistants (TAs), including both graduate and undergraduate students. Each semester, the TAs contributed by refining the slides and updating the lab assignments. Starting from Fall 2024, the course setup is updated to two 75-min lectures, with MATLAB programming now incorporated into the lectures and taught directly by the course instructor, i.e., mysself.
 
 With the lab section now removed, I would like to acknowledge the valuable contributions of the teaching assistants by archiving the presentation slides they developed and refined over the years.
 
