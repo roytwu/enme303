@@ -13,12 +13,14 @@ This is an undergraduate course in linear algebra and numerical methods for stud
 1. demo_vectors
 2. demo_matxBasic
 3. demo_orthogonality
+4. demo_independence
+5. demo_eigen
 
 
 ## Archive Slides
-I taught this course 5 fimes between Fall 2021 and Sring 2024. The course used to have two 50-min lecture plus one 90-min "lab" section. The lab is dedicated to MATLAB programming, and it was ran by teaching assistants (TAs), both graudate and/or undergrd students. (Strictly speaking, it is technically not a lab, as no experiments were carried out.) Each semester, the TAs would refine the slides and update the lab assignments. Starting from Fall 2024, the course setup is updated to two 75-min lectures and MATLAB programing is now taught by myself. 
+I taught this course 5 fimes between Fall 2021 and Sring 2024. The course previously consisted of two 50-min lecture plus one 90-min "lab" section. The lab, while not a laboratory in the traditional sense (as it did not involve physical experiments), was dedicated to MATLAB programming and run by teaching assistants (TAs), including both graduate and undergraduate students. Each semester, contributed by refining the slides and updating the lab assignments. Starting from Fall 2024, the course setup is updated to two 75-min lectures, with MATLAB programming now incorporated into the lectures and taught directly by the instructor, i.e., mysself.
 
-Since the lab section is removed from the course. I would like to acknowledge the contributions of the teaching assistants by archiving the presentation slides.
+With the lab section now removed, I would like to acknowledge the valuable contributions of the teaching assistants by archiving the presentation slides they developed and refined over the years.
 
 
 
