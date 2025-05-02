@@ -1,7 +1,7 @@
 # UMBC ENME303
 
-## Course Objective
-This is an undergraduate course in linear algebra and numerical methods for students of Mechanical Engineering at UMBC. After finishing this course, students will be able to
+## Course Objectives
+This undergraduate course covers linear algebra and numerical methods, and is intended for students in the Mechanical Engineering program at UMBC. After finishing this course, students will be able to
 * Solve linear equations;
 * Perform matrix algebra, calculating determinants and inverses;
 * Be familiar with the concept of orthogonality of vectors;
@@ -9,7 +9,7 @@ This is an undergraduate course in linear algebra and numerical methods for stud
 * Be comfortable with MATLAB programming.
 
 
-## Schedule (alinging with the syllabus):
+## Schedule (align with the course syllabus):
 1. demo_vectors
 2. demo_matxBasic
 3. demo_orthogonality
