@@ -15,6 +15,7 @@ This undergraduate course covers linear algebra and numerical methods, and is in
 3. demo_orthogonality
 4. demo_independence
 5. demo_eigen
+6. gauss_seidel (Numerical Linear Algebra)
 
 
 ## Legacy Lab Slides (Archived)
