@@ -18,8 +18,14 @@ display(tau_x1y1)
 byHand = -10*sqrt(3)-15;
 display(byHand)
 
-%* alternatively
-tau_vec = [-sqrt(3)/2; 1/2];  %*directin of shear stress
+%* alternatively, rotate n 90 degress to get the direction of shear stress
+%* Then project t onto the direction of the shear stress
+angle= pi/2;
+R  = [cos(angle) -sin(angle); sin(angle) cos(angle)];
+tau_vec = R*n;
+% tau_vec = [-sqrt(3)/2; 1/2];  %*directin of shear stress
+
+
 alt= n.'*Sig*tau_vec;
 
 
