@@ -59,35 +59,6 @@ clc;
 [vec, val]=eig(Sig)
 
 
-%% HW Problem - Biaxial Stresses
-clc; clear;
-format bank
-Sig = [3600 0; 0 -1600];
-theta = 56.31;
-
-n =[cosd(theta); sind(theta)];
-
-
-%* 
-t = Sig*n
-display(norm(t))
-
-%* alternatively
-R =[cosd(90) -sind(90); sind(90) cosd(90)];
-sig_x = n.'* Sig*n;
-tau_xy = n.'* Sig*R*n;
-
-
-% %* max shear
-% [vec, val] = eig(Sig);
-% 
-% n =[cosd(45); sind(45)]; %* direction of max shear
-% R =[cosd(90) -sind(90); sind(90) cosd(90)];
-% 
-% 
-% sig_x = n.'* Sig*n
-% tau_xy = n.'* Sig*R*n
-
 %% Pure Torsion
 clc;
 syms t
