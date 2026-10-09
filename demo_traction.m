@@ -7,10 +7,18 @@
 %format rat
 %format short
 %% Problem set up
-
 Sig = [80 30; 30 40];
 n = [1/2; sqrt(3)/2];
 
+%* equation from ENME220
+sig_x = Sig(1,1);
+sig_y = Sig(2,2);
+tau_xy = Sig(1,2);
+theta= 60;
+sig_x1 = (sig_x+sig_y)/2 + (sig_x-sig_y)/2*cosd(2*theta)+tau_xy*sind(2*theta);
+tau_z1y1 = -(sig_x-sig_y)/2*sind(2*theta) +tau_xy* cosd(2*theta);
+
+%% Cauchy's Law
 %* find traction
 t = Sig*n;
 
