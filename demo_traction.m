@@ -1,3 +1,9 @@
+%* ========== ========== ==========
+%* Author: 　　　Roy Wu
+%* Description: Cauchy Stress Tensor
+%* History:     09/16/2026 initial version 
+%* ========== ========== ==========
+
 %format rat
 %format short
 %% Problem set up
@@ -14,6 +20,7 @@ sig_x1 = n.'*Sig*n;
 
 %% shear stress
 clc;
+
 %* Find shear stress from traction vector
 tau_x1y1 = sqrt(norm(t)^2- sig_x1^2); 
 display(tau_x1y1)
@@ -40,8 +47,8 @@ tau_xy = Sig(1,2);
 
 %* equation from ENME220
 dumm = (sig_x-sig_y)/2;
-sig1 = (sig_x+sig_y)/2 +  sqrt((dumm)^2+tau_xy^2)
-sig2 = (sig_x+sig_y)/2 -  sqrt((dumm)^2+tau_xy^2)
+sig1 = (sig_x+sig_y)/2 +  sqrt((dumm)^2+tau_xy^2);
+sig2 = (sig_x+sig_y)/2 -  sqrt((dumm)^2+tau_xy^2);
 
 
 %* principal angle
@@ -52,7 +59,7 @@ display(theta_p)
 %* principal axis
 unit_x = cos(theta_p);
 unit_y = sin(theta_p);
-pAxis = [unit_x; unit_y]
+pAxis = [unit_x; unit_y];
 display(pAxis)
 %% Principal Stress (matrix form)
 clc;

@@ -1,3 +1,9 @@
+%* ========== ========== ==========
+%* Author:      Roy Wu
+%* Description: Maximum shear stress
+%* History:     09/22/2026 initial version 
+%* ========== ========== ==========
+
 %format rat
 %format short
 
@@ -21,14 +27,18 @@ n_d =[cosd(th_d); sind(th_d)];
 
 
 %* Max shear, some normal
-th_d = 45
+th_d = 45;
 tau_d = -0.5*(sig_x-sig_y)*sind(2*th_d) +0;
-sig_d = 0.5*(sig_x+sig_y) +0.5*(sig_x-sig_y)*cosd(2*th_d)+0
+sig_d = 0.5*(sig_x+sig_y) +0.5*(sig_x-sig_y)*cosd(2*th_d)+0;
 
 %% Matrix Form
-t = Sig*n
-n_d =[cosd(th_d); sind(th_d)];
+syms th
 
+t = Sig*n;
+n_d =[cosd(th); sind(th)];
+% 
+% shearOnly= n_d.'*Sig*n ;
+% display(simplify(shearOnly))
 
 % display(norm(t))
 % 
@@ -40,12 +50,10 @@ n_d =[cosd(th_d); sind(th_d)];
 % 
 
 
-%% max shear
-% % [vec, val] = eig(Sig);
-% % 
-% % n =[cosd(45); sind(45)]; %* direction of max shear
-% % R =[cosd(90) -sind(90); sind(90) cosd(90)];
-% % 
-% % 
-% % sig_x = n.'* Sig*n
-% % tau_xy = n.'* Sig*R*n
+%% Pure Tension - Max Shear
+syms rho
+sig = [0 0 0; 0 0 0; 0 0 rho]
+
+n =[0, cosd(45); sind(45)]; %* direction of max shear
+tau = n.'* sig*;
+sig_z = n.'* sig*n
